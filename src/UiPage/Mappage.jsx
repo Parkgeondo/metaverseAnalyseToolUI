@@ -7,7 +7,7 @@ import styles from "./Uipage.module.css";
 //모델 불러오기 함수 + 회전 기능 추가
 function Model(props) {
   const modelRef = useRef();
-  const gltf = useGLTF('/metabus0403.glb');
+  const gltf = useGLTF('./metabus0403.glb');
 
   useFrame(() => {
     if (props.selectedIcon === "box" || props.selectedIcon === "route") {

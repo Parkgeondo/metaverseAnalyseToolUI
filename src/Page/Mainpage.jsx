@@ -67,7 +67,6 @@ export default function Mainpage() {
           selectedIcon={selectedIcon}
           handleIconClick={handleIconClick}
           valueMap={fileName}
-          placeholderMap={fileName}
           valueNav={navfileName}
           onChangeMap={(e) => {
             setfileName(e.target.value);
