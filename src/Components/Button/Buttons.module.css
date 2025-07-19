@@ -1,0 +1,205 @@
+/* 버튼 */
+
+.actionButton {
+  position: relative;
+
+  width: 228px;
+  height: 32px;
+
+  background-color: var(--M1);
+  color: #ffffff;
+  border: 1px solid var(--M1);
+  border-radius: 4px;
+  transition: 0.1s all ease-in-out;
+
+  overflow: hidden;
+}
+
+.actionButton:hover {
+  background-color: var(--M1_hover);
+  border: 1px solid var(--M1_hover);
+}
+
+.actionButton:active {
+  border: 1px solid #D0D4FF;
+}
+
+.disabled{
+  background-color: var(--G3);
+  border: 1px solid var(--G6);
+  pointer-events: none;
+
+}
+/* .actionButton:active {
+  transition-delay: 1s;
+  background-color: var(--M2);
+} */
+
+/* .actionButton > span {
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  left: 50%;
+
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  transform: translate(-50%, 0%);
+} */
+
+/* .actionButton:active .buttonanimation {
+  animation: Click 1.5s ease-in;
+} */
+
+/* .buttonanimation {
+  position: absolute;
+
+  width: 250px;
+  height: 250px;
+  border-radius: 9999px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+
+  background-color: var(--M2);
+} */
+
+/* @keyframes Click {
+  0% {
+    transform: translate(-50%, 10%) scale(1);
+  }
+  100% {
+    transform: translate(-50%, 10%) scale(10);
+  }
+} */
+
+.SmallactionButton {
+  position: relative;
+
+  width: 114px;
+  height: 32px;
+
+  background-color: var(--M1);
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+
+  overflow: hidden;
+}
+
+.SmallactionButton:active {
+  transition-delay: 1s;
+  background-color: var(--M2);
+}
+
+.SmallactionButton > span {
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  left: 50%;
+
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  transform: translate(-50%, 0%);
+}
+
+.SmallactionButton:active .buttonanimation {
+  animation: Click 1.5s ease-in;
+}
+
+/* 결과창 탭 */
+.InterectionTab{
+  box-sizing: border-box;
+  padding: 0px 20px;
+  display: flex;
+  color: var(--G1);
+  font-weight: 700;
+  justify-content: space-around;
+  height: 100px;
+  height: 56px;
+  align-items: center;
+  font-size: 19px;
+  border-bottom: 1px solid var(--G4);
+}
+.Tab{
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  line-height: 56px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.Bottom_Line{
+  border-bottom: 2px solid var(--M1);
+}
+
+.icons{
+  background-color: var(--M1);
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.InterectionButton{
+  color: var(--font-color-second);
+  background-color: var(--G3);
+  border: none;
+  margin-top: 8px;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 3px solid var(--G3);
+}
+
+.InterectionButton div{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-sizing: border-box;
+}
+
+.InteractionButton_h{
+  border: 3px solid var(--M1);
+  box-shadow: 2px 0px 12px rgba(33, 32, 34);
+}
+
+.idProfile{
+  padding: 10px 20px 10px 12px;
+  background-color: var(--G3);
+  border: 0px;
+  border-radius: 50px;
+  color: var(--font-color-second);
+  font-size: var(--fontSize-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.idProfile div{
+  width: 24px;
+  height: 24px;
+  background-color: var(--G8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.idProfile div svg{
+  transform: translate(0px,1px);
+}
+
+.active>div{
+  background-color: var(--M1);
+}

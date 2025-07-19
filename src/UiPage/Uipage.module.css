@@ -1,0 +1,179 @@
+.map, .result{
+    background-color: var(--G5);
+    position: absolute;
+    width: calc(100% - 380px);
+    height: calc(100% - 60px);
+    overflow: auto;
+    overflow-x: hidden;
+    top: 60px;
+    left: 380px;
+    color: white;
+}
+
+.map{
+    font-size: 24px;
+    color: var(--G2);
+    background-color: var(--G1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Fixedarea{
+    /* background-color: #22252f; */
+    background-image: linear-gradient(to bottom, #22252F, #22252f 20%, #22252f 96%, #22252f00 100%);
+    width: 100%;
+    padding: 33px;
+}
+
+.Fixedarea h1,.box h1{
+    font-size: var(--fontSize-UI-Title);
+    margin-top: 60px;
+    margin-bottom: 24px;
+}
+
+.Resultnumber{
+    background-color: var(--G6);
+    width: 1000px;
+    display: flex;
+    border-radius: 4px;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+.Resultnumber div{
+    flex: 1;
+    padding: 30px;
+}
+
+.Resultnumber div h2{
+    font-size: var(--fontSize-UI-Result-Number);
+    line-height: 100%;
+    margin: 0;
+}
+
+.Resultnumber div p{
+    margin: 0;
+    display: inline-block;
+    color: var(--font-color-second);
+    font-size: var(--fontSize-UI-Context-Number);
+}
+
+.Movearea{
+    padding: 33px;
+}
+
+.Movearea .foot_traffic{
+    margin-bottom: 60px;
+}
+
+.Movearea .foot_traffic3{
+    margin-bottom: 60px;
+}
+
+.Movearea .foot_traffic h1{
+    font-size: var(--fontSize-UI-Title);
+    margin-bottom: 24px;
+}
+
+.Movearea .flex_box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Vertical{
+    flex-direction: column;
+}
+
+.Movearea .flex_box h1{
+    font-size: var(--fontSize-UI-Title);
+}
+
+.Movearea .flex_box .foot_traffic2{
+    flex: 1.8;
+}
+
+
+.Movearea .flex_box .foot_traffic2>div{
+    display: flex;
+    flex-wrap: wrap;
+    gap:24px;
+}
+
+.Movearea .flex_box .zone{
+    padding-left: 44px;
+    box-sizing: border-box;
+    flex: 1;
+    border-left: 1px solid var(--G2);
+    top: 100px;
+}
+
+.Vertical .zone{
+    border-left: none !important;
+    padding-left: 0px !important;
+}
+
+.Movearea .flex_box .zone .Img{
+    display: flex;
+    justify-content: start;
+}
+
+.poepleRank{
+    display: flex;
+    gap: 24px;
+}
+.poepleRank div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.Drawing_circle{
+    width: 1131px;
+    height: 442px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.svg{
+    position: absolute;
+    z-index: 1;
+}
+
+.idProfileWrap{
+    gap: 12px;
+    display: flex;
+    margin-bottom: 14px;
+}
+
+.resultProfileWrap{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 1000px;
+    border-radius: 4px;
+    border: 1px solid var(--G2);
+    overflow: hidden;
+}
+.resultProfileWrap div ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;  
+    border-top: 1px solid var(--G2);
+}
+
+.resultProfileWrap div:nth-child(1) ul{
+    border: none;
+}
+
+.resultProfileWrap div:nth-child(1){
+    background-color: var(--G6);
+}
+
+.resultProfileWrap div ul li{
+    font-size: 14px;
+    padding: 12px 20px;
+    list-style:none;
+    flex: 100px;
+}

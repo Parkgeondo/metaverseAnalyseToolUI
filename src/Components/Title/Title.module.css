@@ -1,0 +1,93 @@
+.TitleHead {
+  color: var(--G1);
+  display: inline-flex;
+  width: auto;
+  min-height: 116px;
+  padding: 42px 36px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  border-bottom: solid 1px var(--G4);
+}
+.TitleHead > h1 {
+  margin: 0px;
+  font-size: 24px;
+}
+
+.TitleHead > span {
+  width: 228px;
+  font-size: var(--fontSize-1);
+  height: auto;
+  margin-bottom: 24px;
+  line-height: 150%;
+  text-align: justify;
+}
+
+.Contextcard {
+  color: var(--G1);
+  display: inline-flex;
+  width: auto;
+  min-height: 116px;
+  padding: 42px 36px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  border-bottom: solid 1px var(--G4);
+}
+
+.Contextcard > h1 {
+  margin: 0px;
+  font-size: 18px;
+}
+
+.Contextcard > span {
+  width: 228px;
+  font-size: var(--fontSize-1);
+  height: auto;
+  margin-bottom: 24px;
+}
+
+.filebox {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.filebox .uploadName {
+  height: 40px;
+  vertical-align: middle;
+  padding: 0;
+  width: 228px;
+  background-color: transparent;
+  border: none;
+  color: var(--G1);
+  font-size: 16px;
+}
+
+.uploadName:focus {
+  border: none;
+  outline: none;
+}
+
+.filebox label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 228px;
+  color: #fff;
+  vertical-align: middle;
+  background-color: var(--M1);
+  cursor: pointer;
+  height: 32px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.file {
+  position: absolute;
+  width: 0;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+}

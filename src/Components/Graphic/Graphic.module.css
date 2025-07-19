@@ -1,0 +1,98 @@
+.Graphic_Circle{
+    z-index: 2;
+    position: absolute;
+    top: var(--top);
+    left: var(--left);
+    transform: scale(1) translateX(calc((var(--size)*-1)/2)) translateY(calc((var(--size)*-1)/2));
+}
+.Graphic_Circle div{
+    width: var(--size);
+    height: var(--size);
+    background-color: rgba(255, 0, 0, 0.226);
+    border-radius: 50%;
+}
+
+.LineColor0 div{
+    background-color: rgba(17, 0, 255, 0.226);
+}
+.LineColor1 div{
+    background-color: rgba(255, 0, 140, 0.226);
+}
+.LineColor2 div{
+    background-color: rgba(9, 255, 0, 0.226);
+}
+
+.Graphic_Line{
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.Graphic_Box{
+    z-index: 2;
+    position: absolute;
+    left: var(--left);
+    top: var(--top);
+    width: var(--width);
+    height: var(--height);
+}
+
+.Graphic_Box div{
+    width: 100%;
+    height: 100%;
+    opacity: 10%;
+}
+
+.BoxColor0{
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 2px dashed var(--profile1);
+}
+.BoxColor0 div{
+    background-color: var(--profile1);
+}
+.BoxColor1{
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 2px dashed var(--profile2);
+}
+.BoxColor1 div{
+    background-color: var(--profile2);
+}
+.BoxColor2{
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 2px dashed var(--profile3);
+}
+.BoxColor2 div{
+    background-color: var(--profile3);
+}
+.BoxColor3{
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 2px dashed var(--profile4);
+}
+.BoxColor3 div{
+    background-color: var(--profile4);
+}
+
+.canvasPosition{
+    position: absolute;
+    width: calc(100% - 380px);
+    height: calc(100% - 60px);
+    top: 60px;
+    left: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.canvasPosition_disable{
+    pointer-events: none;
+}
+
+.canvasPosition canvas{
+    overflow: auto;
+    z-index: 1;
+}

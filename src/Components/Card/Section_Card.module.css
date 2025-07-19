@@ -1,0 +1,234 @@
+.Section_Card{
+    background-color: var(--G6);
+    padding: 20px 18px;
+    width: 240px;
+}
+
+.Section_Card .title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.Section_Card .title span{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 4px solid var(--profile1);
+    display: inline-block;
+}
+
+.Section_Card .title h4{
+    margin: 0;
+    font-size: var(--fontSize-UI-ResulCard-title);
+    font-weight: 600;
+}
+
+.Section_Card .section>div{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+
+.Section_Card .section h5,
+.Section_Card .ranking h5{
+    margin: 0;
+    font-size: var(--fontSize-UI-ResulCard-subTitle);
+    font-weight: 400;
+    color: var(--font-color-second);
+}
+
+.Section_Card .section h5{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.Section_Card .ranking h5{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.Section_Card .ranking{
+    border-top: 1px solid var(--G2);
+}
+
+.Section_Card .section .section_box{
+    width: 70px;
+    height: 120px;
+    border: 4px var(--profile1) solid;
+}
+
+.Section_Card .section .section_num{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.Section_Card .ranking .player .id{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.Section_Card .ranking .player .id span{
+    font-size: 14px;
+    color: var(--G7);
+    line-height: 0px;
+}
+
+.Space_Card,.Route_Card{
+    color: white;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--G4);
+}
+
+.Space_Card .Title,.Route_Card .Title{display: flex; align-items: center; gap: 10px; margin-bottom: 12px;}
+.Space_Card .Title h5,.Route_Card .Title h5{ font-size: 15px; margin: 0; color: #CDD0DA;}
+.Space_Card .Title span{width: 16px; height: 16px; background-color: var(--color); border-radius: 50%;}
+.Space_Card .Text, .Route_Card .Text{font-size: 14px; color: #818AA5; text-align: justify;}
+
+.Route_Card{
+    position: relative;
+}
+.Route_Card .Text_wrap{
+    padding-left: 32px;
+    word-wrap: break-word;
+}
+
+
+.Route_Card .number{
+    width: 24px;
+    height: 24px;
+    background-color: var(--M1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 24px;
+    z-index: 1;
+}
+
+.noNumberAfter::after{
+    height: 0px !important;
+}
+
+
+.Route_Card::after{
+    content: '';
+    top: 0;
+    height: calc(100% + 1px);
+    left: 50px;
+    width: 3px;
+    position: absolute;
+    background-color: var(--M1);
+    /* height: 200%;
+    content: '';
+    top: -55%;
+    left: 50px;
+    width: 3px;
+    position: absolute;
+    background-color: var(--M1); */
+}
+
+.Route_Card:first-child::after{
+    content: '';
+    top: 20px;
+    height: calc(100% + 1px);
+    left: 50px;
+    width: 3px;
+    position: absolute;
+    background-color: var(--M1);
+}
+
+.Route_Card:last-child::after{
+    content: '';
+    top: 0px;
+    height: 20px;
+    left: 50px;
+    width: 3px;
+    position: absolute;
+    background-color: var(--M1);
+}
+
+/* 
+.Route_Card:first-child::after{
+    content: '';
+    top: 24px;
+    height: 100%;
+    left: 50px;
+    height: 0px;
+    width: 3px;
+    position: absolute;
+    background-color: var(--M1);
+}
+
+.Route_Card:nth-child(2)::before{
+    content: '';
+    top: -72px;
+    width: 3px;
+    height: 0px;
+    left: 50px;
+    position: absolute;
+    background-color: var(--M1);
+} */
+
+/* .Route_Card:last-child::after{
+    content: '';
+    top: -90%;
+    height: 100%;
+    left: 50px;
+    width: 3px;
+    position: absolute;
+    background-color: var(--M1);
+} */
+
+.section .graph{
+    display: flex;
+    gap: 0px !important;
+    height: 60px;
+}
+
+.graph > div{
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.graph > div:nth-child(1){
+    flex: 3;
+}
+.graph div:nth-child(2){
+    flex: 2;
+}
+.graph div:nth-child(3){}
+.graph div:nth-child(1)::after{
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 12px;
+    background-color: #6457F6;
+}
+.graph div:nth-child(2)::after{
+    content: '';
+    width: 100%;
+    background-color: #5784F6;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 12px;
+}
+.graph div:nth-child(3)::after{
+    flex: 3;
+    content: '';
+    width: 100%;
+    background-color: #5764F6;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 12px;
+}
