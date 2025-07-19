@@ -115,7 +115,7 @@ export default function Mainpage() {
             <iframe
               title="Local Page"
               //이부분?
-              src="https://port-0-metaversanalysis3-1igmo82clotnr0u4.sel5.cloudtype.app/"
+              src="https://parkgeondo.github.io/metaverseSpace/"
               frameborder={0} framespacing={0} marginheight={0} marginwidth={0}  vspace={0}
             ></iframe>
           </div>}
