@@ -2,6 +2,7 @@
   "name": "meta",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@react-three/drei": "^9.88.11",
     "@react-three/fiber": "^8.15.9",
@@ -22,7 +23,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -rf docs && react-scripts build && mv -f build docs",
+   "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
